@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello, World!</h1> 
+
+    <p>This is a simple paragraph. This is a simple paragraph. This is a simple paragraph. This is a simple paragraph. This is a simple paragraph. This is a simple paragraph.</p>
+
+    <!-- This is an Anchor Tag: It is used to create a hyperlink -->
+    <a href="https://www.google.com">Visit Google Website</a>
+
+    <!-- <br> is used to create a line break in the text. It is an empty tag, which means it does not have a closing tag. For example: -->
+    <br><br>
+
+    <!-- In case, if you want the link to be opened in a new tab, use target="_blank" attribute in the anchor tag. For example: -->
+    <a href="https://www.google.com" target="_blank">Visit Google Website</a>
+
+    <br><br>
+
+    <!-- Click on the image to visit Google -->
+    <a href="https://www.google.com"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" width="200" height="100"></a>
+
+    <br><br>
+
+    <!-- The image tag using absolute path is as follows: -->
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" width="200" height="100">
+
+    <br><br>
+
+    <!-- The image tag using relative path is as follows: -->
+    <img src="panda.jpeg" alt="Panda Image" width="200" height="100">
+
+    <br><br>
+
+    <!-- In case the image is not found, then the alt text will be displayed. For example: -->
+    <img src="images/panda.jpeg" alt="Panda Image" width="200" height="100">
+
+    <!-- This is used to make the text bold-->
+    <p><b>This is bold text.</b></p>
+
+    <!-- This is used to make the text italic -->
+    <p><i>This is italic text.</i></p>
+
+    <!-- This is used to make the text strong -->
+    <p><strong>This is strong text.</strong></p>
+
+    <!-- This is used to make the text underlined -->
+    <p><u>This is underlined text.</u></p>
+
+    <!-- This is used to make the text highlighted -->
+    <p><mark>This is highlighted text.</mark></p>
+
+    <p><big>This tage shows big text</big></p>
+
+    <small>This tage shows small text</small>
+
+    <!-- This is used to make the text strikethrough -->
+    <p><s>This is strikethrough text.</s></p>
+
+    <!-- This is used to create a horizontal rule -->
+    <hr>
+
+    <!-- This is used to create a subscript -->
+    <p>H<sub>2</sub>O</p>
+
+    <!-- This is used to create a superscript -->
+    <p>(a + b)<sup>2</sup></p>
+
+    <!-- The <pre> tag is used to define preformatted text -->
+    <pre>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </pre>
+
+
+    <!-- Page Layout Tags-->
+    <header>
+        <h1>Page Layout Tags</h1>
+    </header>
+    <main>
+        <h2>Welcome to my website</h2>
+        <p>This is the main content of the website.</p>
+
+        <!-- The <div> tag is used to group elements together and apply styles to them. It is a block-level element, 
+            which means it takes up the full width of its parent container. For example: -->
+        <div style="background-color: lightblue;">
+            <h2>Welcome to 1st div</h2>
+            <p>This is the main content of 1st div.</p>
+        </div>
+
+        <div style="background-color: red;">
+            <h2>Welcome to 2nd div</h2>
+            <p>This is the main content of 2nd div.</p>
+        </div>
+
+        <!-- The <span> tag is used to group inline elements together and apply styles to them. It is an inline-level element, 
+            which means it only takes up as much width as necessary. For example: -->
+        <span> Hello</span>
+
+        <!-- Unordered List with Square Bullets -->
+        <ul type="square">
+            <li>Apple</li>
+                <ul>
+                    <li>Color:Red Apple</li>
+                    <li>Color: Green Apple</li>
+                </ul>
+            <li>Banana</li>
+            <li>Cherry</li>
+        </ul>
+
+        <!-- Ordered list with Uppercase Letters
+            Type indicates the numbering type:
+            'a' indicates lowercase letters,
+            'A' indicates uppercase letters,
+            'i' indicates lowercase Roman numerals,
+            'I' indicates uppercase Roman numerals,
+            and '1' indicates numbers (default).-->
+        <ol type="A">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+
+        <table border="2">
+            <thead>
+                <caption>Table Sample</caption>
+                <!-- <tr>
+                    <th>Name</th>
+                    <th>Person Age</th>
+                </tr> -->
+                <tr >
+                    <th colspan="2">Information</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>30</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form action="submit.php" method="post">
+            <br>
+            <input type="text" name="name" placeholder="Enter your name" autofocus required>
+            <br><br>
+
+            <input type="password" name="password" placeholder="Enter your password" required>
+            <br><br>
+
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <input type="number" name="phone" placeholder="Enter the phone number" required>
+            <br><br>
+
+            <!-- The value and the display data need to be the same for a particular radio button.
+                The id provided must be different for both radio buttons
+                for and id need to match when considering label and input -->
+            <label for="male">
+                <input type="radio" name="gender" value="male" id="male" required> Male
+            </label>
+            <label for="female">
+                <input type="radio" name="gender" value="female" id="female" required> Female
+            </label>
+            <br><br>
+
+            <!-- CLASS and ID :- -->
+            <div id="id1" class="class1">This is a div with id "id1" and class "class1".</div>
+            <div id="id2" class="class1">This is a div with id "id2" and class "class1".</div>
+            <br><br>
+
+            <!-- Checkbox -->
+            <label for="check1">
+                <input type="checkbox" name="checkbox1" value="check1" id="check1"> Checkbox 1
+            </lable>
+            <lable for="check2">
+                <input type="checkbox" name="checkbox2" value="check2" id="check2"> Checkbox 2
+            </lable>
+            <br><br>
+            
+            <!-- TextArea -->
+            <textarea name="message" rows="4" cols="50" placeholder="Enter your message here..."></textarea>
+            <br><br>
+
+            <!-- Dropdown -->
+             Select your city:
+            <select name="city" id="city" required>
+                <option value="" selected>Select a City</option>
+                <option value="Udupi">Udupi</option>
+                <option value="Mangalore">Mangalore</option>
+                <option value="Bangalore">Bangalore</option>
+            </select>
+            <br><br>
+
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/HcOc7P5BMi4?si=1fMWoPMq0I7Rgu_u" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+            <br>
+
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.wikipedia.org/">
+            </iframe>
+            <br>
+
+            <!-- <video 
+                width="560" 
+                height="315" 
+                controls 
+                autoplay
+                loop>
+                <source src="pitbull.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+
+            <video 
+                src="pitbull.mp4" type="video/mp4"
+                width="560" 
+                height="315" 
+                controls 
+                autoplay
+                loop>
+                Your browser does not support the video tag.
+            </video>
+            <br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website</p>  
+    </footer>
+</body>
+</html>
